@@ -1,0 +1,19 @@
+# Ignore Eclipse workspace settings
+.metadata/
+
+# Ignore build files
+**/bin/
+**/build/
+
+# Ignore compiled Java classes
+*.class
+
+# Ignore IDE settings
+*.iml
+.project
+.classpath
+.settings/
+
+# System files
+.DS_Store
+Thumbs.db
