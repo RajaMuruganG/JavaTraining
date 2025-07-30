@@ -13,10 +13,8 @@ public class Book {
 	}
 
 	public Book(String title, String author, double price) {
-		super();
-		this.title = title;
-		this.author = author;
-		this.price = price;
+		this(title, price);
+		this.author= author;
 	}
 
 	public Book(String title, double price) {
@@ -38,6 +36,14 @@ public class Book {
 		if (this.price > 0) {
 			System.out.println("Price: " + this.price);
 		}
+	}
+	
+	void display(String...n) {
+		System.out.println("VarArg");
+	}
+	
+	void display(Object n) {
+		System.out.println("VarArg");
 	}
 
 }

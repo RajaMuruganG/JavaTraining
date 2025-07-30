@@ -12,6 +12,10 @@ public class BookMain {
 		System.out.println();
 		Book book3 = new Book("Book3", 350);
 		book3.printDetails();
+		Book book4 = new Book("Book4", "Author 4", 450);
+		book2.printDetails();
+		System.err.println("-------");
+		book2.display(null);
 	}
 
 }
