@@ -31,6 +31,12 @@ public class EmployeeMain {
 		System.out.println("");
 		System.out.println("Get the employee with the highest salary");
 		
+		Employee maxSalEmp = employees.stream()
+		.max((o1, o2) -> Double.compare(o1.getSalary(), o2.getSalary()))
+		.get();
+		
+		System.out.println(maxSalEmp);
+		
 		Employee employee = employees.stream()
 		.sorted((emp1, emp2)-> Double.compare(emp2.getSalary(), emp1.getSalary()))
 		.findFirst()
